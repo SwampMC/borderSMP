@@ -1,0 +1,25 @@
+name: SwampMC_BorderSMP
+version: '${project.version}'
+main: dev.louis.worldborder.Worldborder
+api-version: '1.20'
+softdepend: [Vault, Multiverse-Core, CoreProtect, PlaceholderAPI ]
+depend: [Vault]
+author: Louis
+description: SwampMC BorderSMP plugin
+
+commands:
+  bordersmp:
+    description: Bordersmp commands.
+  bsmp:
+    description: Bordersmp commands.
+  hub:
+    description: Go to the hub
+  lobby:
+    description: Go to the lobby
+  spawn:
+    description: Go to the spawn
+  balance:
+    description: Check your balance
+    aliases: [bal]
+
+
