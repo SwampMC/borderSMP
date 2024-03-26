@@ -26,18 +26,23 @@ public final class Worldborder extends JavaPlugin implements Listener {
     //VARS
 
     private LevelManager levelManager;
+
     private WorldborderManager worldborderManager;
+
     private borderSMPManager BorderSMPManager;
+
     private bungeeCordUtil bungeecordutil;
+
     private static Economy econ = null;
 
     //ENABLE AND DISABLE
-    
+
     @Override
     public void onDisable() {
         Bukkit.getMessenger().unregisterOutgoingPluginChannel(this, "BungeeCord");
         loadMessages(false);
     }
+
     @Override
     public void onEnable() {
         if (!setupEconomy() ) {
@@ -68,6 +73,7 @@ public final class Worldborder extends JavaPlugin implements Listener {
         getCommand("balance").setExecutor(new balance());
 
     }
+
     private void loadEvents(Worldborder plugin){
 
         PluginManager pm = Bukkit.getPluginManager();
@@ -78,6 +84,7 @@ public final class Worldborder extends JavaPlugin implements Listener {
 
         pm.registerEvents(new WorldListeners(), plugin);
     }
+
     private void loadManagers(Worldborder plugin){
         levelManager = new LevelManager(plugin);
         worldborderManager = new WorldborderManager(plugin);
@@ -96,6 +103,7 @@ public final class Worldborder extends JavaPlugin implements Listener {
             getLogger().info("CoreProtect not found!");
         }
     }
+
     private void loadMessages(Boolean state){
         if(state){
             Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[SwampMC] " + ChatColor.WHITE + "SwampMC BorderSMP is " + ChatColor.GREEN + "enabled");
@@ -103,6 +111,7 @@ public final class Worldborder extends JavaPlugin implements Listener {
             Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[SwampMC] " + ChatColor.WHITE + "SwampMC BorderSMP is " + ChatColor.RED + "disabled");
         }
     }
+
     private boolean setupEconomy() {
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
             return false;
@@ -120,6 +129,7 @@ public final class Worldborder extends JavaPlugin implements Listener {
     public static Economy getEconomy() {
         return econ;
     }
+
     public CoreProtectAPI getCoreProtect() {
         Plugin plugin = getServer().getPluginManager().getPlugin("CoreProtect");
 
@@ -138,17 +148,22 @@ public final class Worldborder extends JavaPlugin implements Listener {
 
         return CoreProtect;
     }
+
     public LevelManager getLevelManager(){
         return levelManager;
     }
+
     public WorldborderManager getWorldborderManager() {
         return worldborderManager;
     }
+
     public bungeeCordUtil getBungeecordutil(){
         return bungeecordutil;
     }
+
     public borderSMPManager getBorderSMPManager(){
         return BorderSMPManager;
     }
+
 
 }
