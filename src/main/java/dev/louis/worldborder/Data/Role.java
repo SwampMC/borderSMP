@@ -1,10 +1,10 @@
 package dev.louis.worldborder.Data;
 
 public enum Role {
-    ADMIN("worldborder.admin"),
-    MOD("worldborder.mod"),
-    MEMBER("worldborder.member"),
-    GUEST("worldborder.guest");
+    ADMIN("worldborder.role.admin"),
+    MOD("worldborder.role.mod"),
+    MEMBER("worldborder.role.member"),
+    GUEST("worldborder.role.guest");
 
     private String permission;
     Role(String permission) {

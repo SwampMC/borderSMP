@@ -39,7 +39,7 @@ public class commandManager implements TabExecutor {
                 for (int i = 0; i < getSubcommands().size(); i++){
                    if(strings[0].equalsIgnoreCase(getSubcommands().get(i).getName())){
                        if(getSubcommands().get(i).IsOwnerOnly()){
-                          if(p.hasPermission("bordersmp.admin") || p.isOp()){
+                          if(p.hasPermission("bordersmp.owner") || p.isOp()){
                               getSubcommands().get(i).perform(plugin, p, strings);
                           } else {
                               p.sendMessage(ChatColor.RED + "You don't have permission to use this command!");
