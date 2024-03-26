@@ -23,12 +23,16 @@ import net.coreprotect.CoreProtectAPI;
 
 public final class Worldborder extends JavaPlugin implements Listener {
 
+    //VARS
+
     private LevelManager levelManager;
     private WorldborderManager worldborderManager;
     private borderSMPManager BorderSMPManager;
     private bungeeCordUtil bungeecordutil;
     private static Economy econ = null;
 
+    //ENABLE AND DISABLE
+    
     @Override
     public void onDisable() {
         Bukkit.getMessenger().unregisterOutgoingPluginChannel(this, "BungeeCord");
@@ -50,6 +54,9 @@ public final class Worldborder extends JavaPlugin implements Listener {
 
        loadMessages(true);
     }
+
+    //FUNCTIONS
+
     private void loadCommands(Worldborder plugin){
         getCommand("hub").setExecutor(new hub(plugin));
         getCommand("lobby").setExecutor(new hub(plugin));
@@ -107,6 +114,9 @@ public final class Worldborder extends JavaPlugin implements Listener {
         econ = rsp.getProvider();
         return econ != null;
     }
+
+    //GETTERS
+
     public static Economy getEconomy() {
         return econ;
     }
