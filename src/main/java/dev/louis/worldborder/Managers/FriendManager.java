@@ -12,3 +12,4 @@ public class FriendManager {
     public static void isFriend() {
     }
 }
+

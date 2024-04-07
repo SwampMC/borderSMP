@@ -47,6 +47,7 @@ public class commandManager implements TabExecutor {
                        } else {
                             getSubcommands().get(i).perform(plugin, p, strings);
                        }
+
                    }
                 }
             } else if (strings.length == 0) {

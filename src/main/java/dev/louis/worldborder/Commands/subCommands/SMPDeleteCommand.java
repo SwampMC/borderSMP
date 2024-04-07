@@ -60,4 +60,5 @@ public class SMPDeleteCommand extends subCommand {
             }
         }
     }
+
 }

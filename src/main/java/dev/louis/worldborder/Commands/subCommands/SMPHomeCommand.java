@@ -36,4 +36,5 @@ public class SMPHomeCommand extends subCommand{
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv tp " + player.getName() + " " + worldName);
         }
     }
+
 }

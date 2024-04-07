@@ -61,10 +61,6 @@ public class placerholderAPIManager extends PlaceholderExpansion{
             return player.getName();
         }
 
-
-
-
-
         return null;
     }
 }

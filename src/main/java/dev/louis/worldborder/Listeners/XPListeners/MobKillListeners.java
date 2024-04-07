@@ -20,7 +20,6 @@ public class MobKillListeners implements Listener {
         Player player = e.getEntity().getKiller();
         EntityType entityType = e.getEntityType();
 
-
         switch (entityType) {
             case ZOMBIE:
             case CREEPER:

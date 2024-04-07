@@ -45,6 +45,7 @@ public abstract class PaginatedMenu extends Menu{
         }
     }
 
+
     public int getMaxItemsPerPage() {
         return maxItemsPerPage;
     }

@@ -47,6 +47,4 @@ public abstract class Menu implements InventoryHolder {
         return item;
     }
 
-
-
 }

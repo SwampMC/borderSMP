@@ -30,5 +30,4 @@ public class EconomyBalance extends subCommand {
 
         player.sendMessage(ChatColor.GREEN + "Your balance is: " +  ecomomy.getBalance(player));
     }
-
 }

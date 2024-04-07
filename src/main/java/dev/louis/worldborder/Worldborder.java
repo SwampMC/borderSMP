@@ -165,5 +165,4 @@ public final class Worldborder extends JavaPlugin implements Listener {
         return BorderSMPManager;
     }
 
-
 }

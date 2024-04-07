@@ -169,9 +169,6 @@ public class LevelManager {
 
                 break;
 
-
-
-
             default: break;
         }
 

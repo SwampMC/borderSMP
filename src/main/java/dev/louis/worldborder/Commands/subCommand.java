@@ -13,4 +13,5 @@ public abstract class subCommand {
     public abstract Boolean IsOwnerOnly();
 
     public abstract void perform(Worldborder plugin, Player player, String args[]);
+
 }

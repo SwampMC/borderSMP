@@ -47,5 +47,4 @@ public class EconomySetMoney extends subCommand {
             player.sendMessage(ChatColor.RED + "Invalid usage");
         }
     }
-
 }

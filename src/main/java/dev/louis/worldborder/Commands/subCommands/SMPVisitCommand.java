@@ -40,5 +40,6 @@ public class SMPVisitCommand extends subCommand {
         } else {
             player.sendMessage(ChatColor.RED + "Player not found!");
         }
+
     }
 }

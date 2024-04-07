@@ -11,4 +11,5 @@ public class bungeeCordUtil {
         out.writeUTF(servername);
         player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());
     }
+
 }

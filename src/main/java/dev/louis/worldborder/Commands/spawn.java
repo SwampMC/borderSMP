@@ -17,6 +17,7 @@ public class spawn implements CommandExecutor {
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv tp " + player.getName() + " world");
         }
 
+
         return false;
     }
 }

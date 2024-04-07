@@ -10,4 +10,5 @@ public enum Role {
     Role(String permission) {
         this.permission = permission;
     }
+
 }

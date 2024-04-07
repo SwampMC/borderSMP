@@ -35,6 +35,7 @@ public class BlockPlaceListeners implements Listener {
         if (api != null) {
             if(player.getGameMode().equals(GameMode.CREATIVE)) return;
 
+
             switch (blockType) {
                 case DIRT:
                 case GRASS_BLOCK:

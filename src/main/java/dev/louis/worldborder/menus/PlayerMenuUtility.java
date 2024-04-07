@@ -22,5 +22,4 @@ public class PlayerMenuUtility {
     public void setPlayerToPunish(Player playerToKill) {
         this.playerToPunish = playerToKill;
     }
-
 }

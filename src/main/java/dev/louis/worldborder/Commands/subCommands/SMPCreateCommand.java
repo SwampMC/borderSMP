@@ -56,4 +56,5 @@ public class SMPCreateCommand extends subCommand {
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv tp " + player.getName() + " " + player.getUniqueId().toString());
         }
     }
+
 }

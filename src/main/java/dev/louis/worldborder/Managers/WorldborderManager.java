@@ -35,4 +35,5 @@ public class WorldborderManager {
 
         worldBorder.setSize(bordersize - amount);
     }
+
 }

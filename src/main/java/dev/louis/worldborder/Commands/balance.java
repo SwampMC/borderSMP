@@ -22,6 +22,7 @@ public class balance implements CommandExecutor {
             player.sendMessage(ChatColor.GREEN + "Your balance is: " +  ecomomy.getBalance(player));
         }
 
+
         return false;
     }
 }
