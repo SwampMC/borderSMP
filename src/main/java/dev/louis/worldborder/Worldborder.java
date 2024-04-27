@@ -100,11 +100,10 @@ public final class Worldborder extends JavaPlugin implements Listener {
         if (api != null){
             api.testAPI();
         } else {
-            getLogger().info("CoreProtect not found!");
         }
     }
 
-    private void loadMessages(Boolean state){
+    private void loadMessages(boolean state){
         if(state){
             Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[SwampMC] " + ChatColor.WHITE + "SwampMC BorderSMP is " + ChatColor.GREEN + "enabled");
         } else {

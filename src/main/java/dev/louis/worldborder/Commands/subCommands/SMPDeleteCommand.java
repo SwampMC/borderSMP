@@ -48,6 +48,10 @@ public class SMPDeleteCommand extends subCommand {
                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv delete " + worldName);
                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv confirm");
 
+                   player.getInventory().clear();
+
+
+
                    new BukkitRunnable() {
                        @Override
                        public void run() {
@@ -56,7 +60,7 @@ public class SMPDeleteCommand extends subCommand {
                    }.runTaskLaterAsynchronously(plugin, 100L);
                }
             } else {
-                player.sendMessage(ChatColor.RED + "Do /bordersmp delete confirm to delete your world.");
+                player.sendMessage(ChatColor.RED + "Do /bordersmp delete confirm to delete your world. If you want deleted your island than will your inventory deleted too!");
             }
         }
     }
